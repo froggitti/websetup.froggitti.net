@@ -1,9 +1,9 @@
 .DS_Store
-site/js/rts.js
-site/data/*
+#site/js/rts.js
+#site/data/*
 site/firmware/*
-site/js/bundle-data.js
-site/css/pterm.css
+#site/js/bundle-data.js
+#site/css/pterm.css
 .vscode
 **/node_modules
 **/package-lock.json

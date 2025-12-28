@@ -1,0 +1,94 @@
+/* Copyright (c) 2019-2020 Digital Dream Labs. See LICENSE file for details */
+.pterm-main {
+  font-family: 'Ubuntu Mono', monospace;
+  padding: 20px;
+  color: #4FED94;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.pterm-line {
+  display: flex;
+  margin-bottom: 4px;
+}
+.pterm-text {
+  white-space: pre;
+}
+.pterm-text::selection {
+  color: #00672d;
+  background: #FFF;
+}
+.pterm-prompt {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.pterm-row {
+  font-size: 16px;
+  height: 16px;
+  overflow: hidden;
+  position: relative;
+  min-width: 8px;
+}
+.pterm-cursor {
+  background-color: #4FED94;
+  width: 8px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation-name: pterm-cursor-blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+.pterm-red {
+  line-height: 16px;
+  color: #ff7070;
+}
+.pterm-yellow {
+  line-height: 16px;
+  color: #f8ff86;
+}
+.pterm-green {
+  line-height: 16px;
+  color: #0F0;
+}
+.pterm-blue {
+  line-height: 16px;
+  color: #78aeff;
+}
+.pterm-row.pterm-full {
+  width: 100%;
+}
+.pterm-progress-bar {
+  height: 16px;
+  width: 100%;
+  background-color: #1e5737;
+}
+.pterm-progress-bar-track {
+  height: 16px;
+  width: 0%;
+  background-color: #4FED94;
+  transition: width 0.5s;
+}
+.pterm-button {
+  background-color: #4FED94;
+  color: #000;
+  height: 16px;
+  border-radius: 4px;
+}
+.pterm-no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+@keyframes pterm-cursor-blink {
+  from {
+    background-color: rgba(79, 237, 148, 0.8);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
