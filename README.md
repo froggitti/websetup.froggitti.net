@@ -6,7 +6,7 @@ Install [node.js](https://nodejs.org/en/download).
 
 Install the vector-web-setup module by running `npm install vector-web-setup`.
 
-Forward port 8000 (or whatever port you choose to run it on) on your router.
+Forward TCP port 8000 (or whatever port you choose to run it on) on your router.
 
 Change [line 160 in /rts-js/main.js](https://github.com/froggitti/websetup.froggitti.net/blob/master/rts-js/main.js#L160) to your website URL.
 
