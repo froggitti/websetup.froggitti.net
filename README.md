@@ -24,7 +24,7 @@ Forward TCP port 80 and port 443 on your router.
 
 Set up a reverse proxy. I use nginx for this.
 
-Basic nginx reverse proxy configuration:
+Basic nginx reverse proxy configuration (replace websetup.silly.net with your website URL):
 
 ```
 server {
@@ -50,3 +50,5 @@ server {
         }
 }
 ```
+
+Use [certbot](https://certbot.eff.org/) to secure your website with HTTPS (it needs it to work)
